@@ -31,6 +31,7 @@ route.post("/register", (req, res) => {
                 return res.status(200).json({ message: "Successful registered" });
             }).catch((err) => {
                 console.log('failed in Registeration');
+                console.log(err);
                 return res.status(500).json({ error: "failed in registeration" });
             })
         }).catch((err) => {
