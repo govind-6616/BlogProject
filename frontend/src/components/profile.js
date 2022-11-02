@@ -3,7 +3,7 @@ import { Link, useHistory } from "react-router-dom";
 import "../style/nav.css";
 import "../style/blog.css"
 const Profile = () => {
-    var url = "https://source.unsplash.com/random/";
+   
     var url2 = "https://source.unsplash.com/random/employee"
     useEffect(() => {
         callAbout();
@@ -112,7 +112,7 @@ const Profile = () => {
                     return (
                         <div key={index} className="blog-main">
                             <div className="blog-img">
-                                <img src={url} alt="images" />
+                                <img src={val.url} alt="images" />
                             </div>
                             <div className="blog-data">
                                 <h2>{val.category}</h2>
