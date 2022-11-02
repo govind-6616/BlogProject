@@ -103,7 +103,7 @@ const About = () => {
             {
                 <div className="about-main-div">
 
-                    <img src={url} alt="" />
+                    <img src={url2} alt="" />
                     <hr style={{ width: "70%", height: "5px", backgroundColor: "blue", margin: "20px auto" }} />
 
                     <table id="profile-table">
