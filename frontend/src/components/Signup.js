@@ -36,12 +36,15 @@ const Signup = () => {
 
         const data = await res.json();
         console.log(data);
-        if (res.status === 422) {
-           alert("User Already Exist")
-        }
-        else {
-           alert("Successful Register ");
+        if (res.status === 200) {
+            alert("Successful Register ");
             history.push('/Login');
+        }
+        else if(res.status===422) {
+          alert("User Already Exist");
+        }
+        else{
+            alert("Failed Login");
         }
 
     }
@@ -74,26 +77,6 @@ const Signup = () => {
                     <button className="button"><Link to="">Log In</Link></button>
                 </form>
             </div>
-
-          
-                
-
-
-                        {/* <input type="radio"  onChange={inputEvent} name="gender" value="Male" className="rbtn" />
-                        <label for="ans1" className="lab">Male</label>
-
-                        <input type="radio"  onChange={inputEvent}   name="gender" value="Female" className="rbtn" />
-                        <label for="ans2"  className="lab">Female</label>
-                        <br />
-
-                        <input type='checkbox' value="HTML, CSS ,Javascript ,jquery" onChange={inputEvent} checked={nam.Languages} name="Languages"/>
-                        <label htmlFor="v1"  className="lab2">HTML, CSS ,Javascript ,jquery</label>
-                        <br />
-                        <input type='checkbox' value="ReactJs / AngularJs (any one)" onChange={inputEvent}  checked={nam.Frameworks} name="Frameworks"/>
-                        <label htmlFor="v2"  className="lab2">ReactJs / AngularJs  (any one)</label><br />
-                        <input type='checkbox' value="MongoDB / Mysql / Firebase (any one)" onChange={inputEvent} checked={nam.Databases} name="Databases"/>
-                        <label htmlFor="v3"  className="lab2">MongoDB / Mysql / Firebase  (any one)</label> */}
-         
 
         </>
     );
