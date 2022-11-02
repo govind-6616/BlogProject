@@ -12,7 +12,7 @@ const Read = () => {
         getBlog();
     }, [_id]);
 
-    var url = "https://source.unsplash.com/random/";
+ 
     var url2 = "https://source.unsplash.com/random/employee"
 
     const getBlog = async () => {
@@ -37,7 +37,7 @@ const Read = () => {
         <>
             <div className="blog-main">
                 <div className="blog-img">
-                    <img src={url} alt="images" />
+                    <img src={blog.url} alt="images" />
                 </div>
                 <div className="blog-data" style={{ height: "480px", overflowY: "scroll" }}>
                     <h2>{blog.category}</h2>
