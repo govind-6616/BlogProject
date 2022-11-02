@@ -5,7 +5,7 @@ import "../style/blog.css"
 
 const Home = () => {
     const history = useHistory();
-    var url="https://source.unsplash.com/random/";
+
     var url2="https://source.unsplash.com/random/employee"
     const [data, setData] = useState([{}]);
     const { category } = useParams();
@@ -61,7 +61,7 @@ const Home = () => {
                     return (
                         <div key={index} className="blog-main">
                             <div className="blog-img">
-                                <img src={url} alt="images" />
+                                <img src={val.url} alt="images" />
                             </div>
                             <div className="blog-data">
                                 <h2>{val.category}</h2>
