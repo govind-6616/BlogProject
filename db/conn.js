@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
- const DB='mongodb+srv://govind:govind@cluster0.heq3q.mongodb.net/project?retryWrites=true&w=majority';
+const DB="mongodb+srv://govind:asdfghjk@cluster0.n1lsmgu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 //const DB="mongodb://localhost:27017/blog";
 mongoose.connect(DB,{
     useNewUrlParser:true,
